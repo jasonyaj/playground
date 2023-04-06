@@ -7,6 +7,15 @@
   <title>Playground</title>
 </head>
 <body>
-  <h1>Playground Time!!!</h1>
+  <div style="max-width: 80rem; margin: 0 auto;">
+    <div style="    display: flex; justify-content: center; align-items: center; gap: 2rem;">
+      <h2>Welcome!</h2>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 1.3rem; flex-wrap: wrap;">
+      {% for square in range(0, times): %}
+        <div style="min-width: 150px; min-height: 150px; background-color: {{ color }};"></div>
+      {% endfor %}
+    </div>
+  </div>
 </body>
 </html>
